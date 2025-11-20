@@ -38,19 +38,16 @@ git push -u origin develop
 
 ## Крок 4: Створити Issues на GitHub
 
-**Примітка**: Всі Issues (#1-#4) вже виконані при ініціалізації проєкту. 
-Створіть їх на GitHub для документації та історії проєкту, або пропустіть цей крок.
+**Важливо**: Issues створюються на GitHub після того, як репозиторій підключено. 
+Поки що Issues НЕ створені - їх потрібно створити вручну на GitHub.
 
-Створити Issues (всі вже виконані ✅):
-
-### Issue #1: Створення репозиторію ✅ ВИКОНАНО
+### Issue #1: Створення репозиторію
 - **Title**: Створення репозиторію для проекту в GitHub
 - **Description**: Створити новий репозиторій на GitHub з назвою `accident-insurance-model` та налаштувати базову структуру проєкту.
 - **Assignee**: @RomanBelitskiy
 - **Labels**: `setup`, `documentation`
-- **Статус**: ✅ Виконано - репозиторій створено, структура проєкту налаштована, файли запушені
 
-### Issue #2: Налаштування Gradle проєкту ✅ ВИКОНАНО
+### Issue #2: Налаштування Gradle проєкту
 - **Title**: Створення та налаштування вихідного коду мовою Java з Gradle
 - **Description**: 
   - Створити структуру проєкту з Gradle
@@ -58,21 +55,19 @@ git push -u origin develop
   - Створити клас App.java з виведенням "Hello! It is a new project!!!"
   - Підключити проєкт до репозиторію
   - Створити гілки develop та master
-- **Assignee**: @DogaStanislav (виконано @RomanBelitskiy при ініціалізації проєкту)
+- **Assignee**: @DogaStanislav
 - **Labels**: `setup`, `gradle`, `java`
-- **Статус**: ✅ Виконано - всі файли створені та запушені
 
-### Issue #3: Реалізація бізнес-логіки ✅ ВИКОНАНО
+### Issue #3: Реалізація бізнес-логіки
 - **Title**: Написати клас з бізнес-логіки (перша версія)
 - **Description**: 
   - Створити клас `AccidentInsuranceCalculator`
   - Реалізувати методи для розрахунку страхової премії та виплат
   - Додати валідацію вхідних даних
-- **Assignee**: @hlvl1123 (виконано @RomanBelitskiy при ініціалізації проєкту)
+- **Assignee**: @hlvl1123
 - **Labels**: `feature`, `business-logic`
-- **Статус**: ✅ Виконано - клас створено з методами calculatePremium() та calculatePayout()
 
-### Issue #4: Написання тестів ✅ ВИКОНАНО
+### Issue #4: Написання тестів
 - **Title**: Написати тест до класу з бізнес-логіки
 - **Description**: 
   - Створити клас `AccidentInsuranceCalculatorTest`
@@ -80,7 +75,6 @@ git push -u origin develop
   - Перевірити граничні випадки та обробку помилок
 - **Assignee**: @RomanBelitskiy
 - **Labels**: `test`, `quality`
-- **Статус**: ✅ Виконано - тести створено з покриттям граничних випадків
 
 ## Крок 5: Workflow для учасників
 
@@ -99,7 +93,11 @@ git config user.email "його_email@example.com"
 git checkout develop
 git checkout -b feature/gradle-setup-app
 
-# Виконати зміни (якщо потрібно)
+# Виконати зміни
+# - Створити build.gradle
+# - Створити settings.gradle
+# - Створити src/main/java/com/example/insurance/App.java
+
 # Закомітити та запушити
 git add .
 git commit -m "feat: налаштування Gradle проєкту та клас App"
@@ -124,7 +122,9 @@ git config user.email "його_email@example.com"
 git checkout develop
 git checkout -b feature/insurance-calculator
 
-# Виконати зміни (якщо потрібно)
+# Виконати зміни
+# - Створити src/main/java/com/example/insurance/AccidentInsuranceCalculator.java
+
 # Закомітити та запушити
 git add .
 git commit -m "feat: реалізація AccidentInsuranceCalculator"
@@ -145,7 +145,9 @@ git pull origin develop
 # Створити гілку
 git checkout -b feature/calculator-tests
 
-# Виконати зміни (якщо потрібно)
+# Виконати зміни
+# - Створити src/test/java/com/example/insurance/AccidentInsuranceCalculatorTest.java
+
 # Закомітити та запушити
 git add .
 git commit -m "test: додано юніт-тести для AccidentInsuranceCalculator"
@@ -169,4 +171,3 @@ git push origin feature/calculator-tests
 ## Результат
 
 Після цього в історії Git будуть коміти від різних учасників з різних комп'ютерів!
-

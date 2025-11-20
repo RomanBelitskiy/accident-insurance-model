@@ -14,15 +14,11 @@ AccidentInsuranceModel/
 │   ├── main/
 │   │   ├── java/
 │   │   │   └── com/example/insurance/
-│   │   │       ├── App.java
-│   │   │       └── AccidentInsuranceCalculator.java
 │   │   └── resources/
 │   └── test/
 │       └── java/
 │           └── com/example/insurance/
-│               └── AccidentInsuranceCalculatorTest.java
-├── build.gradle
-├── settings.gradle
+├── .gitignore
 └── README.md
 ```
 
@@ -31,21 +27,3 @@ AccidentInsuranceModel/
 - @RomanBelitskiy
 - @DogaStanislav
 - @hlvl1123
-
-## Вимоги
-
-- Java 11 або вище
-- Gradle 7.0 або вище
-
-## Збірка проєкту
-
-```bash
-./gradlew build
-```
-
-## Запуск
-
-```bash
-./gradlew run
-```
-
