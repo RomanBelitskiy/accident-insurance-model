@@ -38,15 +38,19 @@ git push -u origin develop
 
 ## Крок 4: Створити Issues на GitHub
 
-Створити 4 Issues:
+**Примітка**: Всі Issues (#1-#4) вже виконані при ініціалізації проєкту. 
+Створіть їх на GitHub для документації та історії проєкту, або пропустіть цей крок.
 
-### Issue #1: Створення репозиторію
+Створити Issues (всі вже виконані ✅):
+
+### Issue #1: Створення репозиторію ✅ ВИКОНАНО
 - **Title**: Створення репозиторію для проекту в GitHub
 - **Description**: Створити новий репозиторій на GitHub з назвою `accident-insurance-model` та налаштувати базову структуру проєкту.
 - **Assignee**: @RomanBelitskiy
 - **Labels**: `setup`, `documentation`
+- **Статус**: ✅ Виконано - репозиторій створено, структура проєкту налаштована, файли запушені
 
-### Issue #2: Налаштування Gradle проєкту
+### Issue #2: Налаштування Gradle проєкту ✅ ВИКОНАНО
 - **Title**: Створення та налаштування вихідного коду мовою Java з Gradle
 - **Description**: 
   - Створити структуру проєкту з Gradle
@@ -54,19 +58,21 @@ git push -u origin develop
   - Створити клас App.java з виведенням "Hello! It is a new project!!!"
   - Підключити проєкт до репозиторію
   - Створити гілки develop та master
-- **Assignee**: @DogaStanislav
+- **Assignee**: @DogaStanislav (виконано @RomanBelitskiy при ініціалізації проєкту)
 - **Labels**: `setup`, `gradle`, `java`
+- **Статус**: ✅ Виконано - всі файли створені та запушені
 
-### Issue #3: Реалізація бізнес-логіки
+### Issue #3: Реалізація бізнес-логіки ✅ ВИКОНАНО
 - **Title**: Написати клас з бізнес-логіки (перша версія)
 - **Description**: 
   - Створити клас `AccidentInsuranceCalculator`
   - Реалізувати методи для розрахунку страхової премії та виплат
   - Додати валідацію вхідних даних
-- **Assignee**: @hlvl1123
+- **Assignee**: @hlvl1123 (виконано @RomanBelitskiy при ініціалізації проєкту)
 - **Labels**: `feature`, `business-logic`
+- **Статус**: ✅ Виконано - клас створено з методами calculatePremium() та calculatePayout()
 
-### Issue #4: Написання тестів
+### Issue #4: Написання тестів ✅ ВИКОНАНО
 - **Title**: Написати тест до класу з бізнес-логіки
 - **Description**: 
   - Створити клас `AccidentInsuranceCalculatorTest`
@@ -74,6 +80,7 @@ git push -u origin develop
   - Перевірити граничні випадки та обробку помилок
 - **Assignee**: @RomanBelitskiy
 - **Labels**: `test`, `quality`
+- **Статус**: ✅ Виконано - тести створено з покриттям граничних випадків
 
 ## Крок 5: Workflow для учасників
 
