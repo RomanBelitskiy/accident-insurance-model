@@ -14,7 +14,7 @@ java {
 repositories {
     mavenCentral()
 }
-
+// Config for log4j added
 dependencies {
      // Log4j для логування
     implementation 'org.apache.logging.log4j:log4j-api:2.24.1'
